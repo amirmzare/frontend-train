@@ -1,0 +1,118 @@
+:root {
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+@font-face {
+    font-family: "outfit";
+    src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "youngserif";
+    src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Stone-100);
+    font-family: "outfit";
+}
+.container {
+    width: 700px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+.omlet-img {
+    width: 620px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+.title {
+    margin: 30px 0;
+    font-family: "youngserif";
+}
+.recipe {
+    color: var(--Stone-600);
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.time {
+    padding: 20px 30px;
+    background-color: var(--Rose-50);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.time .time-title {
+    margin-bottom: 10px;
+    color: var(--Rose-800);
+    font-family: "outfit";
+    font-size: 18px;
+}
+
+.time .time-ul {
+    padding: 0 15px;
+    color: var(--Stone-600);
+}
+.time .time-ul li::marker {
+    color: var(--Rose-800);
+}
+.time .time-ul li {
+    padding: 7px 5px;
+    font-size: 15px;
+}
+.ingredients,
+.instructions,
+.nutrition {
+    color: var(--Brown-800);
+    margin: 10px 0 20px;
+    font-family: "youngserif";
+}
+.ingredients-ul,
+.instructions-ol {
+    padding: 0 15px;
+    color: var(--Stone-900);
+}
+.ingredients-ul li,
+.instructions-ol li {
+    padding: 4px 5px;
+    line-height: 1.4;
+    font-size: 15px;
+}
+.ingredients-ul li::marker,
+.instructions-ol li::marker {
+    color: var(--Brown-800);
+}
+.nutrition-p {
+    margin-bottom: 20px;
+    color: var(--Stone-900);
+}
+tbody tr {
+    display: block;
+    width: 620px;
+    border-bottom: 1px solid var(--Stone-150);
+    padding: 10px;
+}
+tbody tr:last-child {
+    border-bottom: none;
+}
+tr td {
+    width: 280px;
+    color: var(--Stone-900);
+}
+tr th {
+    color: var(--Brown-800);
+}
