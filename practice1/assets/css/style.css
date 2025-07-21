@@ -1,0 +1,120 @@
+:root {
+    --blue-500: hsl(215, 51%, 70%);
+    --Cyan-400: hsl(178, 100%, 50%);
+    --Cyan-400-a: hsla(178, 100%, 50%, 0.551);
+    --Blue-950: hsl(217, 54%, 11%);
+    --Blue-900: hsl(216, 50%, 16%);
+    --Blue-800: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family: "inter";
+    background-color: var(--Blue-950);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    width: 340px;
+    padding: 25px;
+    background-color: var(--Blue-900);
+    border-radius: 15px;
+}
+.img-holder {
+    position: relative;
+    cursor: pointer;
+}
+.container .image-eq {
+    width: 290px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.img-holder .icon-a {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    background-color: var(--Cyan-400-a);
+    bottom: 0;
+    border-radius: 10px;
+    display: none;
+}
+.img-holder .icon-a .icon-view {
+    position: absolute;
+    bottom: 42%;
+    left: 42%;
+}
+.img-holder:hover .icon-a {
+    display: block;
+}
+.container .eq-brium {
+    transition: 0.5s all ease;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.container .eq-brium:hover {
+    color: var(--Cyan-400);
+}
+.container .explain {
+    color: var(--blue-500);
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container .span-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.span-div .price {
+    color: var(--Cyan-400);
+}
+.span-div .price img,
+.span-div .days img {
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+}
+
+.span-div .days {
+    color: var(--blue-500);
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 20px;
+    border-top: 1px solid var(--Blue-800);
+    font-size: 14px;
+}
+.avatar .avatar-img {
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.avatar p {
+    color: var(--blue-500);
+    margin-right: 5px;
+}
+.avatar a {
+    transition: 0.5s all ease;
+    text-decoration: none;
+    color: #fff;
+}
+.avatar a:hover {
+    color: var(--Cyan-400);
+}
