@@ -1,0 +1,241 @@
+:root {
+    --blue-950: hsl(233, 26%, 24%);
+    --green-500: hsl(136, 64%, 51%);
+    --cyan-400: hsl(192, 69%, 51%);
+
+    --gray-600: hsl(233, 8%, 62%);
+    --gray-100: hsl(220, 16%, 96%);
+    --gray-50: hsl(0, 0%, 98%);
+    --liner-10: linear-gradient(
+        to right,
+        hsl(192, 69%, 51%),
+        hsl(136, 64%, 51%)
+    );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18;
+    font-family: "Public Sans";
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+.link {
+    transition: 0.2s;
+    color: var(--gray-600);
+    margin: 0 16px;
+    padding: 22px 0;
+}
+.link:hover {
+    border-bottom: 4px solid #13cd8c;
+}
+
+.request {
+    transition: 0.2s;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 26px;
+    cursor: pointer;
+    background-image: linear-gradient(
+        20deg,
+        hsl(192, 69%, 51%),
+        hsl(136, 64%, 51%)
+    );
+}
+.request:hover {
+    opacity: 0.7;
+}
+
+.view {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--gray-50);
+    overflow: hidden;
+    position: relative;
+}
+
+.right .mobile {
+    width: 680px;
+    position: absolute;
+    top: -140px;
+    right: -130px;
+    left: 200px;
+}
+.bg-intro {
+    width: 1100px;
+    position: relative;
+    top: -230px;
+}
+.view .right {
+    width: 55%;
+    height: 100%;
+    position: relative;
+}
+
+.view .left {
+    width: 45%;
+    text-align: left;
+    padding-left: 140px;
+}
+.title {
+    font-size: 42px;
+    width: 350px;
+    font-weight: 500;
+}
+.explain {
+    color: var(--gray-600);
+    font-size: 14px;
+    width: 350px;
+    margin: 24px 0;
+}
+.reason-digi {
+    background-color: var(--gray-100);
+    padding: 100px 150px;
+}
+.title-digi {
+    font-weight: 400;
+    font-size: 32px;
+}
+.explain-digi {
+    width: 550px;
+    margin: 32px 0;
+    color: var(--gray-600);
+}
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 24px;
+}
+.item {
+    width: 25%;
+}
+.item h3 {
+    margin: 24px 0;
+    font-weight: 300;
+}
+.item p {
+    width: 90%;
+    color: var(--gray-600);
+}
+.article {
+    padding: 80px 120px;
+    background-color: var(--gray-50);
+}
+.article-title {
+    width: 300px;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 36px;
+}
+.card-holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.card {
+    width: 23%;
+    background-color: #fff;
+}
+.card-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 16px;
+}
+.card-span {
+    color: var(--gray-600);
+    font-size: 12px;
+    padding: 10px 20px;
+}
+.card-title {
+    transition: 0.2s;
+    color: #4b4b4b;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    width: 240px;
+    padding: 10px 20px;
+}
+.card-title:hover {
+    color: #23c9a3;
+}
+.card-explain {
+    font-size: 15px;
+    color: var(--gray-600);
+    width: 287px;
+    padding: 10px 20px;
+}
+.footer {
+    width: 100vw;
+    padding: 50px 80px;
+    background-color: var(--blue-950);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-fo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+}
+.left-fo .logo-fo .light-logo {
+    margin-bottom: 36px;
+}
+.media-links {
+    width: 200px;
+}
+.media {
+    padding: 6px;
+}
+.media img {
+    transition: 0.2;
+}
+.media img:hover {
+    scale: 1.3;
+}
+.contact-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.contact {
+    transition: 0.2;
+    color: #fff;
+}
+.contact:hover {
+    color: #23c9a3;
+}
+.right-fo {
+    text-align: right;
+}
+.copyright {
+    display: block;
+    color: var(--gray-600);
+    font-size: 12px;
+    margin-top: 20px;
+}
