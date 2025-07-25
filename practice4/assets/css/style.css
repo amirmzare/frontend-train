@@ -26,8 +26,8 @@ body {
 a {
     text-decoration: none;
 }
-
 .header {
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -96,29 +96,32 @@ a {
 }
 .title {
     font-size: 42px;
-    width: 350px;
+    max-width: 350px;
     font-weight: 500;
 }
 .explain {
     color: var(--gray-600);
     font-size: 14px;
-    width: 350px;
-    margin: 24px 0;
+    max-width: 350px;
+    margin: 24px 0 40px;
 }
 .reason-digi {
     background-color: var(--gray-100);
-    padding: 100px 150px;
+    padding: 100px 0;
 }
 .title-digi {
     font-weight: 400;
     font-size: 32px;
+    margin-left: 120px;
 }
 .explain-digi {
     width: 550px;
     margin: 32px 0;
     color: var(--gray-600);
+    margin-left: 120px;
 }
 .items {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +129,7 @@ a {
     gap: 24px;
 }
 .item {
-    width: 25%;
+    width: 300px;
 }
 .item h3 {
     margin: 24px 0;
@@ -137,7 +140,7 @@ a {
     color: var(--gray-600);
 }
 .article {
-    padding: 80px 120px;
+    padding: 80px 0;
     background-color: var(--gray-50);
 }
 .article-title {
@@ -145,17 +148,17 @@ a {
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 36px;
+    margin-left: 110px;
 }
 .card-holder {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 32px;
+    margin: auto;
 }
 .card {
-    width: 23%;
+    width: 300px;
     background-color: #fff;
 }
 .card-img {
@@ -188,18 +191,18 @@ a {
     padding: 10px 20px;
 }
 .footer {
-    width: 100vw;
     padding: 50px 80px;
     background-color: var(--blue-950);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
 }
 .left-fo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 150px;
+    gap: 130px;
 }
 .left-fo .logo-fo .light-logo {
     margin-bottom: 36px;
@@ -224,8 +227,12 @@ a {
     row-gap: 24px;
 }
 .contact {
+    width: 70px;
     transition: 0.2;
     color: #fff;
+}
+.contact.big {
+    width: 110px;
 }
 .contact:hover {
     color: #23c9a3;
@@ -238,4 +245,7 @@ a {
     color: var(--gray-600);
     font-size: 12px;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
 }
