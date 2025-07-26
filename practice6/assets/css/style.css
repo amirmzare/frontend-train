@@ -1,0 +1,99 @@
+:root {
+    --White: hsl(0, 100%, 100%);
+    --Purple-100: hsl(275, 100%, 97%);
+    --Purple-600: hsl(292, 16%, 49%);
+    --Purple-950: hsl(292, 42%, 14%);
+}
+@font-face {
+    font-family: "worksans";
+    src: url("../fonts/static/WorkSans-Regular.ttf");
+}
+@font-face {
+    font-family: "worksans";
+    src: url("../fonts/static/WorkSans-SemiBold.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "worksans";
+    src: url("../fonts/static/WorkSans-Bold.ttf");
+    font-weight: 800;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: "worksans";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--Purple-100);
+}
+.container {
+    width: 550px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 32px;
+}
+.title {
+    margin-bottom: 24px;
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--Purple-950);
+}
+.title img {
+    width: 36px;
+}
+.accordion-icon {
+    background-image: url("../images/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: 440px 13px;
+    background-size: 25px;
+    font-size: 15px;
+    color: var(--Purple-950);
+}
+.accordion-icon:hover {
+    color: #ad28eb;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    background-image: url("../images/icon-minus.svg");
+    color: var(--Purple-950);
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-body {
+    font-size: 13px;
+    color: var(--Purple-600);
+}
+.accordion-item {
+    padding: 6px 0;
+    border: none;
+    border-bottom: 2px solid var(--Purple-100);
+}
+.accordion-button::after {
+    display: none;
+}
+@media (max-width: 568px) {
+    .container {
+        width: 460px;
+        padding: 16px;
+    }
+    .accordion-icon {
+        /* background-image: url("../images/icon-plus.svg");
+    background-repeat: no-repeat; */
+        background-position: 400px 13px;
+        font-size: 14px;
+    }
+    .accordion-body {
+        font-size: 12px;
+    }
+}
