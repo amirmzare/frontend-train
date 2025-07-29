@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <div class="container">
-            <div class="products">
+        <div class="container row">
+            <div class="products col-xl-8 col-12">
                 <h2 class="title">Desserts</h2>
-                <div class="items">
-                    <div class="item">
+                <div class="items row">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img"
@@ -32,7 +32,7 @@
                         <h3 class="item-name">Waffle with Berries</h3>
                         <span class="item-price">$6.50</span>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img added"
@@ -55,7 +55,7 @@
                         <h3 class="item-name">Vanilla Bean Crème Brûlée</h3>
                         <span class="item-price">$7.00</span>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img"
@@ -74,7 +74,7 @@
                         <h3 class="item-name">Macaron Mix of Five</h3>
                         <span class="item-price">$8.00</span>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img added"
@@ -97,7 +97,7 @@
                         <h3 class="item-name">Classic Tiramisu</h3>
                         <span class="item-price">$5.50</span>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img"
@@ -116,7 +116,7 @@
                         <h3 class="item-name">Pistachio Baklava</h3>
                         <span class="item-price">$4.00 </span>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img"
@@ -135,7 +135,7 @@
                         <h3 class="item-name">Lemon Meringue Pie</h3>
                         <span class="item-price">$5.00</span>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img"
@@ -154,7 +154,7 @@
                         <h3 class="item-name">Red Velvet Cake</h3>
                         <span class="item-price">$4.50</span>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img"
@@ -173,7 +173,7 @@
                         <h3 class="item-name">Salted Caramel Brownie</h3>
                         <span class="item-price">$4.50</span>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-4 col-sm-6 col-12">
                         <div class="img-holder">
                             <img
                                 class="item-img added"
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <div class="basket">
+            <div class="basket col-xl-4 col-12">
                 <h2 class="basket-title">Your Card (7)</h2>
                 <!-- <img
                     class="empty-img"
@@ -215,11 +215,13 @@
                             <span class="rate">@ $5.50</span>
                             <span class="total">$5.50</span>
                         </div>
-                        <img
-                            class="remove"
-                            src="./assets/images/icon-remove-item.svg"
-                            alt="remove"
-                        />
+                        <button class="remove-btn">
+                            <img
+                                class="remove"
+                                src="./assets/images/icon-remove-item.svg"
+                                alt="remove"
+                            />
+                        </button>
                     </div>
                     <div class="basket-item">
                         <div class="item-holder">
@@ -230,11 +232,13 @@
                             <span class="rate">@ $7.00</span>
                             <span class="total">$28.00</span>
                         </div>
-                        <img
-                            class="remove"
-                            src="./assets/images/icon-remove-item.svg"
-                            alt="remove"
-                        />
+                        <button class="remove-btn">
+                            <img
+                                class="remove"
+                                src="./assets/images/icon-remove-item.svg"
+                                alt="remove"
+                            />
+                        </button>
                     </div>
                     <div class="basket-item">
                         <div class="item-holder">
@@ -243,11 +247,13 @@
                             <span class="rate">@ $6.50</span>
                             <span class="total">$13.00</span>
                         </div>
-                        <img
-                            class="remove"
-                            src="./assets/images/icon-remove-item.svg"
-                            alt="remove"
-                        />
+                        <button class="remove-btn">
+                            <img
+                                class="remove"
+                                src="./assets/images/icon-remove-item.svg"
+                                alt="remove"
+                            />
+                        </button>
                     </div>
                 </div>
                 <div class="total-order">
@@ -294,12 +300,6 @@
                                         We hope you enjoy your food!
                                     </p>
                                 </div>
-                                <!-- <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                ></button> -->
                             </div>
                             <div class="modal-body">
                                 <div class="basket-item modal-basket">
