@@ -106,14 +106,13 @@ header {
     width: 1000px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 100px 140px;
+    justify-content: space-between;
+    gap: 60px;
     text-align: center;
 }
-.item {
+/* .item {
     width: 40%;
-}
+} */
 .item-img {
     width: 70px;
 }
@@ -176,9 +175,12 @@ header {
 }
 .carts {
     width: 1200px;
-    gap: 24px;
+    /* gap: 24px; */
     position: relative;
     z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .cart {
     width: 32%;
