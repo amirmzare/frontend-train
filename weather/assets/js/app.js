@@ -19,7 +19,8 @@ const form = document.querySelector("#search-form");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const value = input.value;
+    let value = input.value;
+    value = value.toLowerCase();
     for (let [city, data] of Object.entries(weatherData)) {
         if (value === city) {
             resultBox.innerHTML = `
