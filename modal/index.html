@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="./assets/plugins/bootsrap/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <div class="container row">
+            <div class="products col-xl-8 col-12">
+                <h2 class="title">Desserts</h2>
+                <div class="items row"></div>
+            </div>
+            <div class="basket col-xl-4 col-12">
+                <div class="empty">
+                    <h2 class="basket-title">Your Card (0)</h2>
+                    <img
+                        class="empty-img"
+                        src="./assets/images/illustration-empty-cart.svg"
+                        alt="empty"
+                    />
+                    <p class="basket-explain">
+                        Your added items will appear here
+                    </p>
+                </div>
+                <div class="basket-items"></div>
+                <div id="total-div" class="hide">
+                    <div class="total-order">
+                        <span class="title-order">Order Total</span>
+                        <span class="total-price"></span>
+                    </div>
+                    <div class="carbon">
+                        <img
+                            src="./assets/images/icon-carbon-neutral.svg"
+                            alt="carbon"
+                        />
+                        &nbsp;This is a &nbsp;<b class="matn">cabon-neutral </b
+                        >&nbsp; delivery
+                    </div>
+                    <button
+                        class="confirm-btn"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        Confirm Order
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1">
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-container"
+                    >
+                        <div class="modal-content">
+                            <img
+                                class="order-icon"
+                                src="./assets/images/icon-order-confirmed.svg"
+                                alt="order"
+                            />
+                            <div class="modal-header">
+                                <div>
+                                    <h1
+                                        class="title modal-title"
+                                        id="exampleModalLabel"
+                                    >
+                                        Order Confirm
+                                    </h1>
+                                    <p class="modal-explain">
+                                        We hope you enjoy your food!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-h"></div>
+                                <div class="total-order modal-total">
+                                    <span class="title-order">Order Total</span>
+                                    <span class="total-price total-m"></span>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="confirm-btn">
+                                    Start New Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/plugins/bootsrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>
