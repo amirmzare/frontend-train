@@ -1,0 +1,224 @@
+:root {
+    --Blue-900: hsl(209, 23%, 22%);
+    --Blue-950: hsl(207, 26%, 17%);
+    --Grey-950: hsl(200, 15%, 8%);
+    --Grey-400: hsl(0, 0%, 50%);
+    --Grey-50: hsl(0, 0%, 99%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-family: "Nunito Sans";
+    background-color: #f0f0f0;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.header {
+    /* max-width: 1400px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 18px 36px;
+}
+.header h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+.dark-mode {
+    border: none;
+    padding: 12px 20px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+.main {
+    margin: 0 48px;
+    max-width: 1400px;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+.input-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 48px 0;
+    padding: 0 64px;
+}
+.input-box input {
+    width: 600px;
+    padding: 18px 22px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.input-box input::placeholder {
+    font-size: 15px;
+}
+.countries-holder {
+    /* width: 90%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+.country {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.country img {
+    width: 100%;
+    height: 165px;
+    border-radius: 5px 5px 0 0;
+}
+.country h3 {
+    margin: 16px 0;
+    padding: 0 16px;
+}
+.country span {
+    margin: 2px 0;
+    padding: 0 16px;
+    font-size: 15px;
+}
+.country span:last-child {
+    margin-bottom: 20px;
+}
+.error {
+    margin: 24px 0;
+    font-size: 18px;
+    color: red;
+}
+#filter {
+    width: 200px;
+}
+.select2-container--default .select2-selection--single {
+    height: 56.8px; /* ارتفاع دلخواه */
+    display: flex;
+    align-items: center; /* متن رو وسط عمودی می‌کنه */
+    padding-left: 12px; /* فاصله از سمت چپ */
+    padding-right: 30px; /* جا برای آیکون dropdown */
+    box-sizing: border-box;
+    border: none;
+    font-size: 15px;
+}
+.select2-container--default .select2-results__option {
+    background-color: #fff;
+}
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: normal; /* جلوی به‌هم‌ریختگی متن و placeholder */
+    /* چون پدینگ رو روی والد دادیم */
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 100%; /* فلش رو وسط کادر میاره */
+    right: 8px; /* فاصله از سمت راست */
+}
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__placeholder {
+    color: #000000; /* مشکی */
+}
+
+/*    detai page */
+.holder {
+    max-width: 1100px;
+    margin: auto;
+}
+.back {
+    width: 120px;
+    display: block;
+    padding: 8px 12px;
+    margin: 70px 0;
+    box-shadow: 1px 3px 4px #222222;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.country-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 80px; */
+}
+.country-img {
+    width: 47%;
+}
+.country-img img {
+    width: 450px;
+}
+.details {
+    width: 47%;
+}
+.details h3 {
+    margin-bottom: 28px;
+    font-size: 28px;
+}
+.country-span {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 170px;
+}
+.country-span span {
+    width: 50%;
+    margin-bottom: 12px;
+    color: #3e3e3e;
+    font-size: 15px;
+}
+.country-span span b {
+    width: 50%;
+    margin-bottom: 12px;
+    color: #151515;
+}
+.borders {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 36px;
+    flex-wrap: wrap;
+}
+.borders b {
+    width: 150px;
+}
+.border-span {
+    display: block;
+    padding: 3px 18px;
+    box-shadow: 1px 2px 3px #222222;
+    text-align: center;
+    font-size: 14px;
+    color: #3e3e3e;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.dark-bg1 {
+    background-color: var(--Blue-900) !important;
+}
+.dark-bg1-color {
+    color: #fff !important;
+}
+.dark-bg2 {
+    background-color: var(--Blue-950);
+    color: #fff;
+}

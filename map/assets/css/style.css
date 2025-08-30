@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg {
+    background-image: url("../images/pattern-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+}
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 24px 0;
+}
+.search-box {
+    background-color: #fff;
+    width: 500px;
+    height: 55px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+.search-box input {
+    outline: none;
+    border: none;
+    padding-left: 24px;
+    width: 80%;
+    font-size: 16px;
+}
+.btn-search {
+    width: 60px;
+    background-color: #000;
+    height: 100%;
+    border-radius: 0 16px 16px 0;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result {
+    width: 900px;
+    height: 180px;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    z-index: 50;
+    padding: 32px 40px;
+    /* gap: 70px; */
+}
+.item {
+    width: 23%;
+    border-right: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+    padding-left: 16px;
+    gap: 16px;
+}
+.item div {
+    font-weight: 500;
+    color: hsl(0, 0%, 58%);
+}
+.item h3 {
+    font-size: 18px;
+}
+.item:last-child {
+    border-right: none;
+}
+#map-container {
+    height: 422px;
+    z-index: -1;
+}
