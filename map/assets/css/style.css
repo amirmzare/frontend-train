@@ -81,3 +81,85 @@
     height: 422px;
     z-index: -1;
 }
+@media (max-width: 1200px) {
+    .result {
+        width: 700px;
+    }
+    .search-box {
+        width: 400px;
+    }
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+    .result {
+        width: 650px;
+        padding: 12px 16px;
+    }
+    .search-box {
+        width: 300px;
+    }
+    .item h3 {
+        font-size: 16px;
+    }
+    .item div {
+        font-size: 14px;
+    }
+    .search-box input::placeholder {
+        font-size: 13px;
+    }
+}
+@media (max-width: 680px) {
+    .bg {
+        position: relative;
+    }
+    .result {
+        width: 140px;
+        padding: 12px 16px;
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        position: absolute;
+        top: 300px;
+    }
+    .item {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #888;
+        padding: 8px;
+    }
+    .item:last-child {
+        border-bottom: none;
+    }
+    .search-box {
+        width: 300px;
+        height: 45px;
+    }
+    .item h3 {
+        font-size: 16px;
+    }
+    .item div {
+        font-size: 14px;
+    }
+    .search-box input::placeholder {
+        font-size: 13px;
+    }
+}
+@media (max-width: 556px) {
+    .result {
+        width: 120px;
+    }
+    .search-box {
+        width: 250px;
+    }
+    .item h3 {
+        font-size: 13px;
+    }
+    .item div {
+        font-size: 12px;
+    }
+    .search-box input::placeholder {
+        font-size: 9px;
+    }
+}
